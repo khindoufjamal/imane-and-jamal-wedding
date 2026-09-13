@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#6f342b">
+<meta name="description" content="Imane &amp; Jamal vous invitent à célébrer leur mariage le 17 octobre 2026 au Palais Azalé à Marrakech.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Mariage d’Imane &amp; Jamal">
+<meta property="og:description" content="Samedi 17 octobre 2026 à 17H00 — Palais Azalé, Marrakech">
+<meta property="og:url" content="https://imane-jamal-wedding-demo.mighty-orbit-0208.chatgpt.site/">
+<meta property="og:image" content="https://imane-jamal-wedding-demo.mighty-orbit-0208.chatgpt.site/assets/apercu-whatsapp.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Invitation au mariage d’Imane et Jamal au Palais Azalé à Marrakech">
+<meta name="twitter:card" content="summary_large_image">
+<title>Imane & Jamal — Marrakech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Noto+Naskh+Arabic:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/palais-luxueux-inscription-mobile.webp" type="image/webp" media="(max-width:600px)">
+<link rel="preload" as="image" href="assets/palais-luxueux-inscription.webp" type="image/webp" media="(min-width:601px)">
+<link rel="icon" href="assets/rosace.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+:root{
+  --terra:#a95340; --terra-dark:#843a31;
+  --ivory:#f8ecd3; --ink:#724131;
+  --gold:#c99a47; --gold-light:#e6c77c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; overflow-x:hidden; background:#efe2c8; color:var(--ink);
+  font-family:"Cormorant Garamond",Georgia,serif;
+}
+button,a{font:inherit}
+body.preopen{overflow:hidden}
+[hidden]{display:none!important}
+button:focus-visible,a:focus-visible{outline:2px solid #fff0bd;outline-offset:4px}
+.hero{
+  min-height:100vh; min-height:100svh; position:relative; overflow:hidden;
+  display:grid; place-items:center;
+  padding:max(18px,env(safe-area-inset-top)) 16px max(40px,env(safe-area-inset-bottom));
+  background:
+    linear-gradient(rgba(27,12,8,.24),rgba(45,18,12,.40)),
+    image-set(url("assets/palais-luxueux-inscription.webp") type("image/webp"),url("assets/palais-luxueux-inscription.jpg") type("image/jpeg"))
+    center/cover no-repeat;
+}
+.hero::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(circle at 50% 45%, transparent 15%, rgba(20,7,4,.28) 100%);
+}
+.lang{
+  position:absolute; z-index:20; right:max(16px,env(safe-area-inset-right));
+  top:max(16px,env(safe-area-inset-top));
+  display:flex; gap:9px; direction:ltr;
+}
+.lang button{
+  min-width:53px; height:45px; padding:0 13px; border-radius:999px;
+  border:1px solid rgba(229,194,111,.95);
+  color:#f7dfaa; background:rgba(65,36,27,.44);
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+  font-size:18px; cursor:pointer;
+}
+.lang button.active{background:#dcb35d;color:#563126;border-color:#dcb35d}
+.wrap{
+  width:min(92vw,520px); z-index:3; text-align:center;
+}
+.stage{height:390px; position:relative; perspective:1400px}
+.envelope{
+  position:absolute; left:50%; top:76px; width:100%; aspect-ratio:1.72/1;
+  transform:translateX(-50%);
+  filter:drop-shadow(0 28px 25px rgba(25,8,5,.43));
+}
+.back{
+  position:absolute; inset:0; border-radius:3px;
+  background:
+    radial-gradient(circle at 22% 18%,rgba(255,255,255,.10) 0 1px,transparent 1.6px) 0 0/7px 7px,
+    linear-gradient(145deg,#b9604d,#8c3c32);
+}
+.paper{
+  position:absolute; z-index:2; left:5%; bottom:11px; width:90%; height:242px;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  padding:44px 32px; color:#70402f;
+  background:
+    radial-gradient(circle at 50% 10%,rgba(255,255,255,.58),transparent 36%),
+    radial-gradient(circle at 20% 16%,rgba(178,133,69,.055) 0 1px,transparent 1.5px) 0 0/6px 6px,
+    linear-gradient(#fff7e6,#f2dfb9);
+  border:1px solid rgba(194,143,61,.65);
+  box-shadow:
+    0 14px 29px rgba(49,21,12,.26),
+    inset 0 0 0 7px rgba(255,250,239,.65),
+    inset 0 0 0 8px rgba(192,140,55,.25);
+  transform:translateY(48%); opacity:0;
+  transition:
+    transform 3.45s cubic-bezier(.19,.8,.23,1) 2.65s,
+    opacity .72s ease 2.6s;
+}
+.paper::before,.paper::after{
+  content:"❦"; position:absolute; left:50%; transform:translateX(-50%);
+  color:var(--gold); font-size:24px;
+}
+.paper::before{top:17px}
+.paper::after{bottom:14px;transform:translateX(-50%) rotate(180deg)}
+.paper-side{position:absolute;top:50%;color:var(--gold);font-size:21px;opacity:.68;transform:translateY(-50%)}
+.paper-side.left{left:18px}
+.paper-side.right{right:18px;transform:translateY(-50%) rotate(180deg)}
+.corner{
+  position:absolute; width:48px; height:48px; opacity:.76;
+}
+.corner.tl{left:13px;top:13px;border-left:1px solid var(--gold);border-top:1px solid var(--gold)}
+.corner.tr{right:13px;top:13px;border-right:1px solid var(--gold);border-top:1px solid var(--gold)}
+.corner.bl{left:13px;bottom:13px;border-left:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.corner.br{right:13px;bottom:13px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.paper-text{
+  max-width:350px; font-size:25px; line-height:1.25; font-weight:500; text-wrap:balance;
+}
+.paper-text em{font-weight:500}
+.front{
+  position:absolute; inset:0; z-index:4;
+  clip-path:polygon(0 30%,50% 65%,100% 30%,100% 100%,0 100%);
+  background:
+    linear-gradient(32deg,transparent 49.7%,rgba(101,43,34,.22) 50%,transparent 50.3%),
+    linear-gradient(-32deg,transparent 49.7%,rgba(101,43,34,.22) 50%,transparent 50.3%),
+    radial-gradient(circle at 24% 24%,rgba(255,255,255,.07) 0 1px,transparent 1.6px) 0 0/7px 7px,
+    linear-gradient(145deg,#ad5745,#8c3d33);
+}
+.flap{
+  position:absolute; z-index:6; left:0; right:0; top:0; height:65%;
+  transform-origin:50% 0%; transform-style:preserve-3d;
+  clip-path:polygon(0 0,100% 0,50% 100%);
+  background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.07) 0 1px,transparent 1.6px) 0 0/7px 7px,linear-gradient(#ba624f,#994438);
+  transition:transform 2.75s cubic-bezier(.22,.7,.2,1) .45s;
+}
+.seal{
+  position:absolute; z-index:9; left:50%; top:57%;
+  width:86px; height:86px; transform:translate(-50%,-50%);
+  border:0; border-radius:50%; cursor:pointer;
+  background:
+    radial-gradient(circle at 35% 25%,#f1d57a 0 8%,#d9ac4e 33%,#a97329 69%,#e3bf62 83%,#946323 100%);
+  box-shadow:
+    0 0 0 2px #efd17a, 0 0 0 5px #ad782d,
+    0 9px 20px rgba(42,17,9,.47),
+    inset 0 2px 2px rgba(255,255,255,.55);
+}
+.seal svg{width:58px;height:58px;color:#684125;display:block;margin:auto}
+.seal::after{
+  content:""; position:absolute; inset:-12px; border-radius:50%;
+  border:1px solid rgba(238,199,108,.24);
+  animation:pulse 2.3s ease-in-out infinite;
+}
+@keyframes pulse{
+  50%{transform:scale(1.06);border-color:rgba(240,207,123,.8)}
+}
+.envelope.open .flap{transform:rotateX(178deg);z-index:1}
+.envelope.open .paper{transform:translateY(-48%);opacity:1}
+.envelope.open .seal{animation:sealAway .65s forwards}
+@keyframes sealAway{
+  to{opacity:0;transform:translate(-50%,-50%) scale(.78)}
+}
+
+.after{
+  position:relative; padding:70px 18px max(28px, env(safe-area-inset-bottom));
+  opacity:0; transform:translateY(22px); transition:1.15s cubic-bezier(.19,.8,.23,1);
+  background:
+    radial-gradient(circle at 50% 0%,#fff9eb 0,#f5e6c9 40%,#efdbb7 100%);
+}
+.after.ready{opacity:1;transform:none}
+.card{
+  max-width:760px; margin:auto; text-align:center; position:relative;
+  padding:46px 24px 24px;
+  border:1px solid rgba(190,141,58,.50);
+  box-shadow:
+    0 18px 35px rgba(95,59,28,.08),
+    inset 0 0 0 7px rgba(255,250,239,.48),
+    inset 0 0 0 8px rgba(190,141,58,.18);
+}
+.verse{
+  font-family:"Noto Naskh Arabic",serif;
+  font-size:clamp(24px,6vw,37px); line-height:1.85;
+  margin:0; color:#754534;
+}
+.ref{color:#ae7735;margin:9px 0 40px;font-size:16px}
+.names{
+  font-size:clamp(48px,11vw,76px); font-weight:500; line-height:.95;
+  color:#a54e3c; margin:0 0 30px;
+}
+.invite{
+  max-width:670px; margin:auto; font-size:clamp(20px,4.8vw,26px);
+  line-height:1.55; text-wrap:pretty;
+}
+.rule{width:92px;height:1px;background:#bc8738;margin:40px auto}
+.date{
+  font-size:clamp(31px,7vw,48px); text-transform:uppercase;
+  letter-spacing:.06em; color:#a54c3a; line-height:1.2;
+}
+.time{font-size:31px;margin:20px 0 28px;letter-spacing:.08em;font-variant-numeric:lining-nums tabular-nums}
+.venue{font-size:34px;font-weight:500}
+.city{font-size:21px;letter-spacing:.15em;margin-top:7px}
+.actions{
+  display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin-top:45px
+}
+.actions a{
+  min-width:226px;min-height:54px;padding:14px 19px;text-decoration:none;
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  border:1px solid #bd8739;color:#86503c;border-radius:999px;font-size:19px;
+  background:rgba(255,249,235,.34);box-shadow:0 7px 18px rgba(84,49,25,.07)
+}
+.actions .primary{background:#a6513e;color:#fff7e7;border-color:#a6513e}
+.actions a{transition:transform .2s ease,box-shadow .2s ease}
+.actions a:hover{transform:translateY(-1px);box-shadow:0 9px 21px rgba(84,49,25,.12)}
+.actions a:active{transform:translateY(1px)}
+.action-icon{width:19px;height:19px;flex:0 0 auto}
+.closing{max-width:610px;margin:48px auto 0;font-size:19px;line-height:1.55;text-wrap:balance}
+.guest-line{max-width:620px;margin:-10px auto 24px;font-size:20px;color:#9a673f}
+.guest-name{display:block;font-size:26px;color:#914637;font-weight:600;margin-top:4px}
+[dir=rtl] .invite,[dir=rtl] .paper-text,[dir=rtl] .date,[dir=rtl] .actions,[dir=rtl] .closing,[dir=rtl] .guest-line{
+  font-family:"Noto Naskh Arabic",serif;
+}
+[dir=rtl] .invite,[dir=rtl] .closing{line-height:1.85}
+
+@media(max-width:600px){
+  .hero{background-image:linear-gradient(rgba(19,8,6,.25),rgba(35,13,9,.45)),image-set(url("assets/palais-luxueux-inscription-mobile.webp") type("image/webp"),url("assets/palais-luxueux-inscription-mobile.jpg") type("image/jpeg"));background-position:center}
+}
+
+@media(max-width:430px){
+  .wrap{width:min(92vw,400px)}
+  .stage{height:352px}
+  .envelope{top:78px;height:auto;aspect-ratio:1.68/1}
+  .seal{top:57%}
+  .paper{height:231px}
+  .paper-text{font-size:22px;max-width:285px}
+  .after{padding-left:14px;padding-right:14px}
+  .card{padding:39px 16px 20px}
+  .actions a{width:100%;max-width:320px}
+}
+@media(max-height:690px) and (orientation:landscape){
+  .wrap{width:min(72vw,500px)}
+  .stage{height:290px}
+  .envelope{top:45px;max-width:400px}
+  .paper{height:215px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* Final-page scroll fix */
+html,body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  overscroll-behavior-y:none;
+}
+.after{
+  min-height:0 !important;
+  height:auto !important;
+  margin:0 !important;
+  padding-bottom:max(28px, env(safe-area-inset-bottom)) !important;
+}
+.after > *:last-child,
+.card > *:last-child{
+  margin-bottom:0 !important;
+}
+.card{margin-bottom:0 !important;}
+
+</style>
+</head>
+<body class="preopen">
+
+<section class="hero" id="hero">
+  <nav class="lang" aria-label="Choisir la langue">
+    <button type="button" class="active" data-lang="fr" lang="fr" aria-pressed="true">FR</button>
+    <button type="button" data-lang="ar" lang="ar" dir="rtl" aria-pressed="false">العربية</button>
+    <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+  </nav>
+
+  <div class="wrap">
+    <div class="stage">
+      <div class="envelope" id="envelope">
+        <div class="back"></div>
+
+        <div class="paper" id="paper" aria-hidden="true">
+          <div class="corner tl"></div><div class="corner tr"></div>
+          <div class="corner bl"></div><div class="corner br"></div>
+          <span class="paper-side left" aria-hidden="true">❧</span>
+          <span class="paper-side right" aria-hidden="true">❧</span>
+          <div class="paper-text" id="paperText">
+            C’est avec une immense joie<br>
+            que nous vous convions à<br>
+            célébrer <em>notre mariage.</em>
+          </div>
+        </div>
+
+        <div class="front"></div>
+        <div class="flap"></div>
+        <button class="seal" id="seal" type="button" aria-label="Ouvrir l’invitation">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2.1">
+              <circle cx="50" cy="50" r="35"/>
+              <path d="M50 16c5 12 10 17 22 12-5 12-2 19 10 24-12 5-15 12-10 24-12-5-19 0-22 12-4-12-11-17-23-12 5-12 2-19-10-24 12-5 15-12 10-24 12 5 19 0 23-12Z"/>
+              <path d="M50 30c4 9 8 13 17 9-4 9-1 14 8 18-9 4-12 9-8 18-9-4-14 0-17 9-3-9-8-13-17-9 4-9 1-14-8-18 9-4 12-9 8-18 9 4 14 0 17-9Z"/>
+              <circle cx="50" cy="57" r="8"/>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="after" id="after" hidden inert aria-hidden="true" tabindex="-1">
+  <article class="card">
+    <div class="corner tl"></div><div class="corner tr"></div>
+    <div class="corner bl"></div><div class="corner br"></div>
+
+    <p class="verse">
+      مِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا<br>
+      وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً.
+    </p>
+    <div class="ref">سورة الروم — الآية ٢١</div>
+
+    <h1 class="names">Imane &amp; Jamal</h1>
+    <p class="guest-line" id="guestLine" hidden></p>
+
+    <p class="invite" id="invite">
+      Entourés de l’affection de nos familles, nous avons l’immense joie de vous convier
+      à célébrer notre union. Votre présence, vos sourires et vos prières rendront cette
+      journée encore plus précieuse.
+    </p>
+
+    <div class="rule"></div>
+
+    <div class="date" id="date">Samedi 17 octobre<br>2026</div>
+    <div class="time" id="time">17H00</div>
+    <div class="venue">Palais Azalé</div>
+    <div class="city">MARRAKECH</div>
+
+    <div class="actions">
+      <a class="primary" id="route"
+         href="https://maps.app.goo.gl/42gKVrx1EiTT2pw48"
+         target="_blank" rel="noopener noreferrer">
+        <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-13a7 7 0 1 0-14 0c0 6.8 7 13 7 13Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+        <span>Voir l’itinéraire</span>
+      </a>
+      <a id="calendar" href="assets/mariage-imane-jamal.ics" type="text/calendar" download="mariage-imane-jamal.ics">
+        <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 3v4m10-4v4M3 10h18" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+        <span>Ajouter à mon calendrier</span>
+      </a>
+    </div>
+
+    <p class="closing" id="closing">
+      Au plaisir de vous accueillir et de partager avec vous cette journée si précieuse.
+    </p>
+  </article>
+</section>
+
+<script>
+const copy = {
+  fr:{
+    paper:'C’est avec une immense joie<br>que nous vous convions à<br>célébrer <em>notre mariage.</em>',
+    invite:'Entourés de l’affection de nos familles, nous avons l’immense joie de vous convier à célébrer notre union. Votre présence, vos sourires et vos prières rendront cette journée encore plus précieuse.',
+    date:'Samedi 17 octobre<br>2026',
+    time:'17H00',
+    route:'Voir l’itinéraire',
+    calendar:'Ajouter à mon calendrier',
+    closing:'Au plaisir de vous accueillir et de partager avec vous cette journée si précieuse.',
+    guest:'Nous avons le plaisir de convier',
+    open:'Ouvrir l’invitation'
+  },
+  en:{
+    paper:'With immense joy,<br>we invite you to celebrate<br><em>our wedding.</em>',
+    invite:'Surrounded by the love of our families, we are delighted to invite you to celebrate our union. Your presence, smiles and kind wishes will make this day even more precious.',
+    date:'Saturday 17 October<br>2026',
+    time:'5:00 PM',
+    route:'View directions',
+    calendar:'Add to my calendar',
+    closing:'We look forward to sharing this moment of joy, tenderness and kindness with you.',
+    guest:'We are delighted to invite',
+    open:'Open the invitation'
+  },
+  ar:{
+    paper:'بكل فرح ومحبة،<br>يسعدنا أن ندعوكم<br>لمشاركتنا <em>حفل زفافنا.</em>',
+    invite:'بكل فرح ومحبة، وبرفقة عائلتينا، يسعدنا أن ندعوكم لمشاركتنا فرحة زفافنا. حضوركم ودعواتكم وابتساماتكم ستجعل هذا اليوم أجمل وأغلى على قلوبنا.',
+    date:'السبت ١٧ أكتوبر<br>٢٠٢٦',
+    time:'١٧:٠٠',
+    route:'عرض الموقع',
+    calendar:'إضافة إلى التقويم',
+    closing:'يسعدنا أن نشارككم هذه اللحظة المليئة بالفرح والمودة والرحمة.',
+    guest:'يسعدنا أن ندعو',
+    open:'فتح الدعوة'
+  }
+};
+
+let selected = 'fr';
+let opened = false;
+let userInterrupted = false;
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+const envelope = document.getElementById('envelope');
+const seal = document.getElementById('seal');
+const after = document.getElementById('after');
+const paper = document.getElementById('paper');
+const paperText = document.getElementById('paperText');
+const invite = document.getElementById('invite');
+const date = document.getElementById('date');
+const time = document.getElementById('time');
+const route = document.getElementById('route');
+const calendar = document.getElementById('calendar');
+const closing = document.getElementById('closing');
+const guestLine = document.getElementById('guestLine');
+const guest = (new URLSearchParams(location.search).get('invite') || '').trim().slice(0, 80);
+
+function applyLanguage(lang){
+  selected = lang;
+  document.querySelectorAll('.lang button').forEach(btn => {
+    const active = btn.dataset.lang === lang;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+
+  seal.setAttribute('aria-label', copy[lang].open);
+
+  // Avant l’ouverture : on mémorise seulement la langue.
+  if(!opened) return;
+
+  const t = copy[lang];
+  paperText.innerHTML = t.paper;
+  invite.textContent = t.invite;
+  date.innerHTML = t.date;
+  time.textContent = t.time;
+  route.querySelector('span').textContent = t.route;
+  calendar.querySelector('span').textContent = t.calendar;
+  closing.textContent = t.closing;
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  after.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  after.lang = lang;
+  paper.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  paper.lang = lang;
+
+  if(guest){
+    guestLine.replaceChildren();
+    guestLine.append(document.createTextNode(t.guest));
+    const name = document.createElement('span');
+    name.className = 'guest-name';
+    name.textContent = guest;
+    guestLine.append(name);
+    guestLine.hidden = false;
+  }
+}
+
+document.querySelectorAll('.lang button').forEach(btn => {
+  btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+});
+
+seal.addEventListener('click', () => {
+  if(opened) return;
+  opened = true;
+  applyLanguage(selected);
+  paper.setAttribute('aria-hidden', 'false');
+  envelope.classList.add('open');
+
+  if(reduceMotion.matches){
+    document.body.classList.remove('preopen');
+    after.hidden = false;
+    after.removeAttribute('inert');
+    after.setAttribute('aria-hidden', 'false');
+    after.classList.add('ready');
+    after.scrollIntoView({behavior:'auto', block:'start'});
+    after.focus({preventScroll:true});
+    return;
+  }
+
+  const interrupt = () => { userInterrupted = true; };
+  window.addEventListener('wheel', interrupt, {passive:true, once:true});
+  window.addEventListener('touchmove', interrupt, {passive:true, once:true});
+  window.addEventListener('keydown', interrupt, {once:true});
+
+  setTimeout(() => {
+    document.body.classList.remove('preopen');
+    after.hidden = false;
+    after.removeAttribute('inert');
+    after.setAttribute('aria-hidden', 'false');
+    requestAnimationFrame(() => requestAnimationFrame(() => after.classList.add('ready')));
+  }, 7200);
+
+  setTimeout(() => {
+    if(!userInterrupted){
+      after.scrollIntoView({behavior:'smooth', block:'start'});
+      after.focus({preventScroll:true});
+    }
+  }, 8400);
+});
+</script>
+</body>
+</html>

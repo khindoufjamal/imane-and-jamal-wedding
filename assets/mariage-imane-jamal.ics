@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Imane & Jamal//Wedding//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:imane-jamal-20261017@wedding
+DTSTAMP:20260913T000000Z
+DTSTART;TZID=Africa/Casablanca:20261017T170000
+DTEND;TZID=Africa/Casablanca:20261018T020000
+SUMMARY:Mariage Imane & Jamal
+DESCRIPTION:Célébration du mariage d’Imane et Jamal au Palais Azalé à Marrakech.
+LOCATION:Palais Azalé\, Marrakech
+URL:https://maps.app.goo.gl/42gKVrx1EiTT2pw48
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
