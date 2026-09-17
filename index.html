@@ -265,6 +265,26 @@ html,body{
 }
 .card{margin-bottom:0 !important;}
 
+#boutonMusique {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 50%;
+  background: rgba(40,25,20,.7);
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+}
+#boutonMusique.playing {
+  background: rgba(169,83,64,.92);
+  border-color: #e6c77c;
+}
+#boutonMusique:active { transform: scale(.96); }
+
 </style>
 </head>
 <body class="preopen">
@@ -356,6 +376,12 @@ html,body{
   </article>
 </section>
 
+<audio id="musiqueMariage" src="musique.mp3" loop preload="auto"></audio>
+
+<button id="boutonMusique" aria-label="Activer ou couper la musique">
+  ♫
+</button>
+
 <script>
 const copy = {
   fr:{
@@ -411,6 +437,40 @@ const calendar = document.getElementById('calendar');
 const closing = document.getElementById('closing');
 const guestLine = document.getElementById('guestLine');
 const guest = (new URLSearchParams(location.search).get('invite') || '').trim().slice(0, 80);
+const musique = document.getElementById('musiqueMariage');
+const boutonMusique = document.getElementById('boutonMusique');
+
+musique.volume = 0.35;
+
+function actualiserBoutonMusique(){
+  const lectureEnCours = !musique.paused;
+  boutonMusique.textContent = lectureEnCours ? '❚❚' : '♫';
+  boutonMusique.classList.toggle('playing', lectureEnCours);
+  boutonMusique.setAttribute(
+    'aria-label',
+    lectureEnCours ? 'Couper la musique' : 'Activer la musique'
+  );
+  boutonMusique.title = lectureEnCours ? 'Couper la musique' : 'Activer la musique';
+}
+
+function lancerMusique(){
+  musique.play()
+    .then(actualiserBoutonMusique)
+    .catch(() => actualiserBoutonMusique());
+}
+
+boutonMusique.addEventListener('click', () => {
+  if(musique.paused){
+    lancerMusique();
+  }else{
+    musique.pause();
+    actualiserBoutonMusique();
+  }
+});
+
+musique.addEventListener('play', actualiserBoutonMusique);
+musique.addEventListener('pause', actualiserBoutonMusique);
+actualiserBoutonMusique();
 
 function applyLanguage(lang){
   selected = lang;
@@ -459,6 +519,7 @@ document.querySelectorAll('.lang button').forEach(btn => {
 seal.addEventListener('click', () => {
   if(opened) return;
   opened = true;
+  lancerMusique();
   applyLanguage(selected);
   paper.setAttribute('aria-hidden', 'false');
   envelope.classList.add('open');
